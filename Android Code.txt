@@ -1,0 +1,11 @@
+XML
+<WebView
+        android:id="@+id/matrixview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+		</WebView>
+
+JAVA	WebView web = (WebView) findViewById(R.id.matrixview);
+        web.loadUrl("file:///android_asset/brain_matrix/index.html");
+        WebSettings webSettings = web.getSettings();
+        webSettings.setJavaScriptEnabled(true);
